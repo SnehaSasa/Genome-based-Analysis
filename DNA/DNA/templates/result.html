@@ -1,0 +1,227 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Result</title>
+
+  <script src="https://kit.fontawesome.com/47101d2035.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+      span{
+        text-transform: uppercase;
+        font-size: 60px;
+        color: whitesmoke;
+      } 
+     h1{
+      text-transform: uppercase;
+      font-size: 40px;
+     margin-top: 80px;
+     color: rgb(245, 237, 122);
+      }
+      .center {
+        position: absolute;
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(7, 116, 83);
+      }
+      strong {
+        font-size: 15px;
+        color: rgb(245, 245, 245);
+
+      }
+    </style>
+  </style>
+</head>
+
+<body class="center">
+  {% if result == 'lymphoid leukemia' %} 
+    <h1>lymphoid leukemia</h1>
+    <img src="{% static 'images/dis1.jpg' %}" class="img-fluid" alt="Responsive image">
+      <p style="color: rgb(191, 186, 204); font-weight: 900;"> <strong>DISEASE DESCRIPTION:</strong> <br>Chronic lymphocytic leukemia (also called CLL) is a cancer of the blood and bone marrow that usually gets worse slowly. 
+        CLL is one of the most common types of leukemia in adults.it rarely occurs in children.<br>
+        
+        <strong>SYMPTOMS AND CAUSES:</strong> <br>Bleeding from the gums,Bone pain,Fever,Frequent infections<br>
+
+        <strong>PREVENTIVE:</strong> <br>Prevention. There is no known way to prevent most cases of leukemia at this time. 
+        Most people who get acute lymphocytic leukemia have no known risk factors, 
+        so there is no way to prevent these leukemias from developing.<br>
+  {% elif result == 'lymphoblastic leukemia' %} 
+    <h1>lymphoblastic leukemia</h1>
+    <img src="{% static 'images/dis2.jpg' %}" class="img-fluid" alt="Responsive image">
+      <p style="color: rgb(191, 186, 204); font-weight: 900;"> <strong>DISEASE DESCRIPTION:</strong>What is leukaemia? Leukaemias (or leukemias - U.S. spelling) are cancers of the white blood cells, which begin in the bone marrow. Leukaemias are grouped in two ways: the type of white blood cell affected - lymphoid or myeloid; and how quickly the disease develops and gets worse.
+        
+        <strong>SYMPTOMS AND CAUSES:</strong> <br>•	Fever or chills. Persistent fatigue, weakness.
+        •	Frequent or severe infections.
+        •	Losing weight without trying. Swollen lymph nodes, enlarged liver or spleen.
+        •	Easy bleeding or bruising. Recurrent nosebleeds. 
+        •	Tiny red spots in your skin (petechiae)
+        <br>
+
+        <strong>PREVENTIVE:</strong> <br>There is no known way to prevent leukemia, but avoiding tobacco and exposure to pesticides and industrial chemicals might help.<br>
+
+  {% elif result == 'leukemia' %} 
+    <h1>leukemia</h1>
+    <img src="{% static 'images/dis3.jpg' %}" class="img-fluid" alt="Responsive image">
+    <p style="color: rgb(191, 186, 204); font-weight: 900;"> <strong>DISEASE DESCRIPTION:</strong> <br>Leukaemias (or leukemias - U.S. spelling) are cancers of the white blood cells, which begin in the bone marrow. Leukaemias are grouped in two ways: the type of white blood cell affected - lymphoid or myeloid; and how quickly the disease develops and gets worse.<br>
+                
+    <strong>SYMPTOMS AND CAUSES:</strong> <br>
+    •	Fever or chills. Persistent fatigue, weakness.
+    •	Frequent or severe infections.
+    •	Losing weight without trying. Swollen lymph nodes, enlarged liver or spleen.
+    •	Easy bleeding or bruising. Recurrent nosebleeds. 
+    •	Tiny red spots in your skin (petechiae)
+    <br>
+        
+    <strong>PREVENTIVE:</strong> <br>Nonetheless, studies indicate some types of leukemia may be prevented by avoiding high doses of radiation, exposure to the chemical benzene, smoking and other tobacco use, or certain types of chemotherapy used to treat other types of cancer.<br>
+
+    {% elif result == 'hematologic cancer' %} 
+    <h1>hematologic cancer</h1>
+    <img src="{% static 'images/dis4.jpg' %}" class="img-fluid" alt="Responsive image">
+    <p style="color: rgb(191, 186, 204); font-weight: 900;"> <strong>DISEASE DESCRIPTION:</strong> <br>Blood cancer is a type of cancer that affects your blood cells. Leukaemia, lymphoma and myeloma are some of the most common types of blood cancer. There are also types called MPNs and MDS. Blood cancer is caused by changes (mutations) in the DNA within blood cells.<br>
+                
+    <strong>SYMPTOMS AND CAUSES:</strong> <br>
+    •	Weight loss that is unexplained. 
+    •	Bruising or bleeding that is unexplained. 
+    •	Lumps or swellings.
+    •	Shortness of breath (breathlessness) Drenching night sweats.
+    •	Infections that are persistent, recurrent or severe. Fever (38°C or above) that is unexplained.
+    •	Rash or itchy skin that is unexplained.
+    <br>
+        
+    <strong>PREVENTIVE:</strong> <br>Additional lifestyle behaviors, such as staying active and eating a healthy diet can help reduce your risk for developing a variety of cancers and other diseases. Treatment for blood cancers often consists of chemotherapy, radiation and stem cell treatment.<br>
+    {% elif result == 'immune system cancer' %} 
+    <h1>immune system cancer</h1>
+    <img src="{% static 'images/dis5.jpg' %}" class="img-fluid" alt="Responsive image">
+    <p style="color: rgb(191, 186, 204); font-weight: 900;"> <strong>DISEASE DESCRIPTION:</strong> <br>Cancer can weaken the immune system by spreading into the bone marrow. The bone marrow makes blood cells that help to fight infection. This happens most often in leukaemia or lymphoma, but it can happen with other cancers too. The cancer can stop the bone marrow from making so many blood cells.<br>
+                
+    <strong>SYMPTOMS AND CAUSES:</strong> <br>
+    •	Symptoms and causes
+    •	Painless swelling of lymph nodes in your neck, armpits or groin.
+    •	Persistent fatigue. Fever.
+    •	Night sweats.
+    •	Shortness of breath.
+    •	Unexplained weight loss. Itchy skin.
+    <br>
+        
+    <strong>PREVENTIVE:</strong> <br>
+    1.	Eat healthy. Like any engine, your body relies on the fuel you give it. ...
+    2.	Get exercise. There's no getting away from this basic truth. ... 
+    3.	Aim for good sleep. Don't underestimate the power of rest. ... 
+    4.	Eliminate tobacco and avoid alcohol. ... Reduce stress.
+    <br>
+    {% elif result == 'ovarian disease' %} 
+    <h1>ovarian disease</h1>
+    <img src="{% static 'images/dis6.jpg' %}" class="img-fluid" alt="Responsive image">
+    <p style="color: rgb(191, 186, 204); font-weight: 900;"> <strong>DISEASE DESCRIPTION:</strong> <br>The ovaries are small, oval-shaped glands located on either side of your uterus. They produce and store your eggs (also called ovum) and make hormones that control your menstrual cycle and pregnancy. During ovulation, one of your ovaries releases an egg. If a sperm fertilizes this egg, you can become pregnant.<br>
+                
+    <strong>SYMPTOMS AND CAUSES:</strong> <br>
+    •	BLOATING Increased abdominal size / persistent bloating that doesn’t come and go
+    •	EATING COMPLICATIONS Difficulty eating / feeling full quickly 
+    • In pelvic and/or abdominal areas
+    • Urgent or frequent urination
+
+    <br>
+        
+    <strong>PREVENTIVE:</strong> <br>
+    20% of ovarian cancers are caused by a genetic mutation — it’s imperative to know risk, as well as prophylactic options for those with a mutation.
+    70% of the most common and lethal ovarian cancer begins in the fallopian tubes. Research shows that removing the fallopian tubes when having another pelvic surgery such as a hysterectomy or tubal ligation, and leaving the ovaries intact, can help prevent ovarian cancer.
+    <br>
+
+    {% elif result == 'disease of anatomical entity' %} 
+    <h1>disease of anatomical entity</h1>
+    <img src="{% static 'images/dis7.jpg' %}" class="img-fluid" alt="Responsive image">
+    <p style="color: rgb(191, 186, 204); font-weight: 900;"> <strong>DISEASE DESCRIPTION:</strong> <br>most medical terminologies, diseases are classified according– at least in part – to the anatomical entity in which they are located.<br>
+                
+    <strong>SYMPTOMS AND CAUSES:</strong> <br>
+    •	Fever. 
+    •	Diarrhea.
+    •	Fatigue. 
+    •	Muscle aches. 
+    •	Coughing.
+    
+    <br>
+        
+    <strong>PREVENTIVE:</strong> <br>
+    • Learn, practice, and teach healthy habits.
+    • Handle & Prepare Food Safely. Food can carry germs. ... 
+    • Wash Hands Often. ... #3 Clean & Disinfect Commonly Used Surfaces. ...
+    • Cough and Sneeze into a Tissue or Your Sleeve. ...
+    • Don't Share Personal Items. ...
+    • Get Vaccinated. ... 
+    • Avoid Touching Wild Animals. ...
+    •  Stay Home When Sick.
+
+    <br>
+    {% elif result == 'disease of mental health' %} 
+    <h1>disease of mental health</h1>
+    <img src="{% static 'images/dis8.jpg' %}" class="img-fluid" alt="Responsive image">
+    <p style="color: rgb(191, 186, 204); font-weight: 900;"> <strong>DISEASE DESCRIPTION:</strong> <br>Mental health is a state of mental well-being that enables people to cope with stress. The need for action on mental health is indisputable and urgent. Learn more with WHO. Official WHO website. Services: Scam alert, Advice for the public, Advice for health workers.<br>
+                
+    <strong>SYMPTOMS AND CAUSES:</strong> <br>
+    •	Feeling sad or down 
+    •	Confused thinking or reduced ability to concentrate
+    •	Excessive fears or worries, or extreme feelings of guilt 
+    •	Extreme mood changes of highs and lows 
+    •	Withdrawal from friends and activities
+    causes
+    •	childhood abuse, trauma, or neglect.
+    •	social isolation or loneliness.
+    •	experiencing discrimination and stigma, including racism.
+    •	social disadvantage, poverty or debt.
+    •	bereavement (losing someone close to you)
+    
+    <br>
+    <strong>PREVENTIVE:</strong> <br>
+    Mental health prevention is defined as intervening to minimize mental health problems by addressing determinants of mental health problems before a specific mental health problem has been identified in the individual, group, or population of focus with the ultimate goal of reducing the number of future mental health.
+    <br>  
+    {% elif result == 'disease of metabolism' %} 9
+    <h1>disease of metabolism</h1>
+    <img src="{% static 'images/dis9.jpg' %}" class="img-fluid" alt="Responsive image">
+    <p style="color: rgb(191, 186, 204); font-weight: 900;"> <strong>DISEASE DESCRIPTION:</strong> <br>Metabolic syndrome is a cluster of conditions that occur together, increasing your risk of heart disease, stroke and type 2 diabetes. These conditions include increased blood pressure, high blood sugar, excess body fat around the waist, and abnormal cholesterol or triglyceride levels.<br>
+                
+    <strong>SYMPTOMS AND CAUSES:</strong> <br>
+    •	Unintended weight loss, or a failure to gain weight and grow nd children. 
+    •	Unexpected weight gain. 
+    •	Tiredness and lack of energy.
+    •	Changes to the skin – color, bruising easily, thinning, slow to heal.
+    •	Belly pain and vomiting.
+    •	Decreased appetite.
+
+    <br>
+        
+    <strong>PREVENTIVE:</strong> <br>
+    Here's what you can do starting today: Eat better. Adopt a diet rich in whole grains, fruits, vegetables, skinless poultry, fish, nuts, low-fat or fat-free dairy products, lean meats and vegetable protein. Limit processed foods, saturated and trans fats, red meat, sodium and added sugars.
+    <br>
+    {% elif result == 'nervous system disease' %} 10
+    <h1>nervous system disease</h1>
+    <img src="{% static 'images/dis10.jpg' %}" class="img-fluid" alt="Responsive image">
+    <p style="color: rgb(191, 186, 204); font-weight: 900;"> <strong>DISEASE DESCRIPTION:</strong> <br>Disorders of the nervous system may involve the following: Vascular disorders, such as stroke, transient ischemic attack (TIA), subarachnoid hemorrhage, subdural hemorrhage and hematoma, and extradural hemorrhage. Infections, such as meningitis, encephalitis, polio, and epidural abscess.<br>
+                
+    <strong>SYMPTOMS AND CAUSES:</strong> <br>
+    •	Persistent or sudden onset of a headache.
+    •	A headache that changes or is different. 
+    •	Loss of feeling or tingling.
+    •	Weakness or loss of muscle strength.
+    •	Loss of sight or double vision.
+    •	Memory loss. Impaired mental ability. 
+    •	Lack of coordination.
+
+    <br>
+        
+    <strong>PREVENTIVE:</strong> <br>
+    Exercise encourages nerve regeneration. If you are able to, aim to have 150 minutes of physical activity a week. If this is not possible, passive forms of exercise where a caregiver helps to move your limbs can improve muscle strength and prevent muscle wasting in paralysed limbs.
+    <br>
+  {% else %}
+    <h1 style="color: rgb(31, 15, 15); font-weight: 900;">{{result}}</h1>
+  {% endif %}
+</body>
+
+</html> 
